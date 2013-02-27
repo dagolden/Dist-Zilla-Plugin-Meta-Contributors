@@ -18,7 +18,12 @@ sub mvp_multivalue_args { qw/contributor/ }
 
 sub metadata {
     my $self = shift;
-    return { x_contributors => $self->contributor };
+    if ( @{$self->contributor} ) {
+        return { x_contributors => $self->contributor };
+    }
+    else {
+        return {}
+    }
 }
 
 with 'Dist::Zilla::Role::MetaProvider';
@@ -31,7 +36,7 @@ __PACKAGE__->meta->make_immutable;
 
 =head1 SYNOPSIS
 
-  [Meta::Contributor]
+  [Meta::Contributors]
   contributor = Wile E Coyote <coyote@example.com>
   contributor = Road Runner <fast@example.com>
 
