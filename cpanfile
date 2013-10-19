@@ -10,6 +10,7 @@ on 'test' => sub {
   requires "List::Util" => "0";
   requires "Test::DZil" => "0";
   requires "Test::More" => "0.96";
+  requires "utf8" => "0";
 };
 
 on 'test' => sub {

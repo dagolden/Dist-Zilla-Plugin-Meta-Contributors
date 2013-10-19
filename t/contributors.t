@@ -1,12 +1,18 @@
 use 5.006;
 use strict;
 use warnings;
+use utf8;
 use Test::More 0.96;
-
 use Test::DZil;
 
-my @CONTRIBUTORS =
-  ( 'Wile E Coyote <coyote@example.com>', 'Road Runner <fast@example.com>', );
+binmode(Test::More->builder->$_, ":utf8") for qw/output failure_output todo_output/;
+
+my @CONTRIBUTORS = (
+    'Wile E Coyote <coyote@example.com>',
+    'Road Runner <fast@example.com>',
+    'Olivier Mengué <dolmen@cpan.org>',
+    '김도형 - Keedi Kim <keedi@cpan.org>',
+);
 
 {
     my $tzil = Dist::Zilla::Tester->from_config( { dist_root => 'corpus/DZ' }, );
