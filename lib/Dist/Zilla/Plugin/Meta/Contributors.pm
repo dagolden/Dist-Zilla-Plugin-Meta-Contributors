@@ -18,11 +18,11 @@ sub mvp_multivalue_args { qw/contributor/ }
 
 sub metadata {
     my $self = shift;
-    if ( @{$self->contributor} ) {
+    if ( @{ $self->contributor } ) {
         return { x_contributors => $self->contributor };
     }
     else {
-        return {}
+        return {};
     }
 }
 
