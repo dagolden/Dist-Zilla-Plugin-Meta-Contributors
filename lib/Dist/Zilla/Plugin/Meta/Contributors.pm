@@ -48,7 +48,8 @@ of distribution metadata.
 =head1 SEE ALSO
 
 =for :list
-* L<Dist::Zilla::Plugin::ContributorsFromGit> -- automatic generation from git commit history
+* L<Dist::Zilla::Plugin::Git::Contributors> - automatic generation from git commit history, with different ordering options; supports MSWin32
+* L<Dist::Zilla::Plugin::ContributorsFromGit> - an older implementation of git generation, with a heavier dependency chain that is sometimes problematic on some architectures
 
 =cut
 
