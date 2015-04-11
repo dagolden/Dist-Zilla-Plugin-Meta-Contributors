@@ -4,7 +4,8 @@ use warnings;
 
 package Dist::Zilla::Plugin::Meta::Contributors;
 # ABSTRACT: Generate an x_contributors section in distribution metadata
-# VERSION
+
+our $VERSION = '0.002';
 
 use Moose;
 
