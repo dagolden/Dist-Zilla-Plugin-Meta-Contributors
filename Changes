@@ -2,6 +2,14 @@ Revision history for Dist-Zilla-Plugin-Meta-Contributors
 
 {{$NEXT}}
 
+    [Documented]
+
+    - Added to SEE ALSO
+
+    [Tests]
+
+    - Test Unicode characters
+
 0.001     2013-02-27 11:39:29 America/New_York
 
     - First release
