@@ -10,6 +10,10 @@ Revision history for Dist-Zilla-Plugin-Meta-Contributors
 
     - Test Unicode characters
 
+    [Meta]
+
+    - Updated repo layout and meta files
+
 0.001     2013-02-27 11:39:29 America/New_York
 
     - First release
