@@ -4,6 +4,7 @@ use warnings;
 use utf8;
 use Test::More 0.96;
 use Test::DZil;
+use Dist::Zilla::Tester;
 
 binmode(Test::More->builder->$_, ":utf8") for qw/output failure_output todo_output/;
 
