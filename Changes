@@ -2,6 +2,8 @@ Revision history for Dist-Zilla-Plugin-Meta-Contributors
 
 {{$NEXT}}
 
+0.003     2016-02-25 15:37:53-05:00 America/New_York
+
     [Fixed]
 
     - Make Dist::Zilla::Tester prereq explicit
